@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;}
+        fieldset{border-width: 1; padding: 0;}
+        legend {display: block; margin-bottom: .5rem; font-weight: 600;}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+        
+            <fieldset><legend> Test  </legend>        </fieldset>
+                <div class="mb-3">
+                    <label for="employeeId" class="form-label" >8-Digit Employee ID</label>
+                    <input type="text" class="form-control" id="employeeId" maxlength="8" required>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name
+                </label>
+                <input type="text" class="form-text" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="digitExtension" class="form-label">4- Digit Extension
+                </label>
+                <input type="text" class="form-text" id="digitExtension" maxlength="4" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail" required>
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <form action="submit">
+                      <label for="department">Department</label> <br>
+                      <select name="department" id="department" required>
+                            <option value="administrative">Administrative</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="executive">Exectutive</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="quality-assurance">Quality Assurance</option>
+                            <option value="sales">Sales</option>
+                      </select>
+                    </form>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Employee</button>
+         
+
+    </form>
+</body>
+</html>
